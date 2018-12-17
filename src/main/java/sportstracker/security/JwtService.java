@@ -35,7 +35,7 @@ import java.util.Map;
  * https://connect2id.com/products/nimbus-jose-jwt/examples/jwe-with-shared-key
  * https://connect2id.com/products/nimbus-jose-jwt/examples/validating-jwt-access-tokens
  *
- * @author Chuc Ba Hieu
+
  */
 public class JwtService {
 

@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Base Service class for upload image
  *
- * @author Chuc Ba Hieu
+
  */
 public abstract class BaseImageStorageService implements FileStorageService {
 

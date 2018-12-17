@@ -9,7 +9,6 @@ import org.mapstruct.factory.Mappers;
 /**
  * Map team to teamDto
  *
- * @author dntvo
  */
 @Mapper(componentModel = "spring")
 public interface TeamMapper {

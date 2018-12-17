@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 /**
  * Storing files in the file system and retrieving them
  *
- * @author Chuc Ba Hieu
+
  */
 @Service
 @Qualifier("activityImageService")

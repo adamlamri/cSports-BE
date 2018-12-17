@@ -11,7 +11,7 @@ import sportstracker.dao.repository.AccountRepository;
 import sportstracker.dao.repository.ActivityRepository;
 import sportstracker.dao.repository.ProfileRepository;
 import sportstracker.model.*;
-import sportstracker.security.SpectrePrincipal;
+import sportstracker.security.LamRiPrincipal;
 import sportstracker.service.AccountService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -19,7 +19,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -125,7 +124,7 @@ public class AccountServiceImpl implements AccountService {
 
         log.debug("Loaded user having username: " + username);
 
-        return new SpectrePrincipal(user.toAccountDto());
+        return new LamRiPrincipal(user.toAccountDto());
     }
 
     /**

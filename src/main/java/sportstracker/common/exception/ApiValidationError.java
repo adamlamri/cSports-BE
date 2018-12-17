@@ -6,8 +6,6 @@ import lombok.EqualsAndHashCode;
 
 /**
  * Expresses validation problems encountered during the REST call
- *
- * @author Hieu Ba Chuc
  */
 @Data
 @EqualsAndHashCode

@@ -18,7 +18,7 @@ import java.io.IOException;
  * Authentication success handler for sending the response
  * to the client after successful authentication.
  *
- * @author Chuc Ba hieu
+
  */
 @Slf4j
 public class AuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {

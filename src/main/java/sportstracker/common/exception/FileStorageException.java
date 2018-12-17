@@ -2,8 +2,6 @@ package sportstracker.common.exception;
 
 /**
  * File storage exception
- *
- * @author Chuc Ba Hieu
  */
 public class FileStorageException extends RuntimeException{
     public FileStorageException(String message) {

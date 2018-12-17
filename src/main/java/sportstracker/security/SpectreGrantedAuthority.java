@@ -7,7 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
  * Simpler than Spring Security's SimpleGrantedAuthority
  * and easily use :).
  *
- * @author Chuc Ba Hieu
+
  */
 public class SpectreGrantedAuthority implements GrantedAuthority {
 

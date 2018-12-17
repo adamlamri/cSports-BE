@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 /**
  * Competition service
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 @Service

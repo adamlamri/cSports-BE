@@ -4,8 +4,6 @@ import sportstracker.common.social.model.facebook.FacebookProfile;
 
 /**
  * Facebook api binding
- *
- * @author Chuc Ba Hieu
  */
 public class Facebook extends ApiBinding {
 

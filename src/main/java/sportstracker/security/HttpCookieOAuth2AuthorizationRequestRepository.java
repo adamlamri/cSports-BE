@@ -16,7 +16,7 @@ import java.util.Base64;
 /**
  * Cookie based repository for storing Authorization requests
  *
- * @author Chuc Ba Hieu
+
  */
 public class HttpCookieOAuth2AuthorizationRequestRepository implements AuthorizationRequestRepository<OAuth2AuthorizationRequest> {
 

@@ -7,7 +7,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * Bind all the file security properties
  *
- * @author Chuc Ba Hieu
  */
 @ConfigurationProperties(prefix = "security")
 @Getter

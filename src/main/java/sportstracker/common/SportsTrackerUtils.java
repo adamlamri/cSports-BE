@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import sportstracker.dao.entity.Account;
 import sportstracker.model.AccountDto;
 import sportstracker.security.JwtService;
-import sportstracker.security.SpectrePrincipal;
+import sportstracker.security.LamRiPrincipal;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
@@ -18,8 +18,6 @@ import java.util.Optional;
 
 /**
  * Useful helper methods
- *
- * @author Chuc Ba Hieu
  */
 @Component
 @Slf4j
@@ -65,8 +63,8 @@ public class SportsTrackerUtils {
 
         if (auth != null) {
             Object principal = auth.getPrincipal();
-            if (principal instanceof SpectrePrincipal) {
-                return ((SpectrePrincipal) principal).currentUser();
+            if (principal instanceof LamRiPrincipal) {
+                return ((LamRiPrincipal) principal).currentUser();
             }
         }
         return null;

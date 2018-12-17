@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * Filter for token authentication
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 public class SpectreTokenAuthenticationFilter extends OncePerRequestFilter {

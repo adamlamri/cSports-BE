@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * Logs in or registers a user after OAuth2 SignIn/Up
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 public class SpectreOAuth2UserService extends DefaultOAuth2UserService {
@@ -44,14 +44,14 @@ public class SpectreOAuth2UserService extends DefaultOAuth2UserService {
      * Builds the security principal from the given userReqest.
      * Registers the user if not already reqistered
      */
-    public SpectrePrincipal buildPrincipal(OAuth2User oath2User, String registrationId, OAuth2AccessToken accessToken) {
+    public LamRiPrincipal buildPrincipal(OAuth2User oath2User, String registrationId, OAuth2AccessToken accessToken) {
 
         Map<String, Object> attributes = oath2User.getAttributes();
         String socialId = oath2User.getName();
         Account user = checkUser(socialId, registrationId, accessToken.getTokenValue(), attributes);
 
         AccountDto userDto = user.toAccountDto();
-        SpectrePrincipal principal = new SpectrePrincipal(userDto);
+        LamRiPrincipal principal = new LamRiPrincipal(userDto);
         principal.setAttributes(attributes);
         principal.setName(oath2User.getName());
 

@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * OAuth2 Authentication failure handler for removing oauth2 related cookies
  *
- * @author Chuc Ba Hieu
+
  */
 public class OAuth2AuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {

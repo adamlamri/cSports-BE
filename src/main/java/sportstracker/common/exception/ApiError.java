@@ -13,8 +13,6 @@ import java.util.List;
 /**
  * ApiError has fields to hold relevant information
  * about errors that happen during REST calls.
- *
- * @author Hieu Ba Chuc
  */
 @Data
 class ApiError {

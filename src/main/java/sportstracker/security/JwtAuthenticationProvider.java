@@ -13,7 +13,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 /**
  *Authentication provider for JWT token authentication
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 public class JwtAuthenticationProvider implements AuthenticationProvider {
@@ -42,7 +42,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
         log.debug("User found ...");
 
         SportsTrackerUtils.ensureCredentialsUpToDate(claims, user);
-        SpectrePrincipal principal = new SpectrePrincipal(user.toAccountDto());
+        LamRiPrincipal principal = new LamRiPrincipal(user.toAccountDto());
 
         return new JwtAuthenticationToken(principal, token, principal.getAuthorities());
     }

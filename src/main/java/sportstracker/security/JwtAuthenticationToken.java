@@ -10,7 +10,7 @@ import java.util.Collection;
 /**
  * JWT Authentication token
  *
- * @author Chuc Ba Hieu
+
  */
 public class JwtAuthenticationToken extends AbstractAuthenticationToken {
 

@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * Bind all the file storage properties
  *
- * @author Chuc Ba Hieu
  */
 @ConfigurationProperties(prefix = "upload")
 @Getter

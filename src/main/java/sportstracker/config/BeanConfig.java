@@ -22,8 +22,6 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 /**
  * Bean provider
- *
- * @author Chuc Ba Hieu
  */
 @Configuration
 public class BeanConfig {

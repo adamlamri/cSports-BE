@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 /**
  * Logs in or registers a user after OpenID Connect SignIn/Up
  *
- * @author Chuc Ba Hieu
+
  */
 public class SpectreOidcUserService extends OidcUserService {
     private static final Log log = LogFactory.getLog(SpectreOidcUserService.class);
@@ -27,7 +27,7 @@ public class SpectreOidcUserService extends OidcUserService {
     public OidcUser loadUser(OidcUserRequest userRequest) throws OAuth2AuthenticationException {
 
         OidcUser oidcUser = super.loadUser(userRequest);
-        SpectrePrincipal principal = oauth2UserService.buildPrincipal(oidcUser,
+        LamRiPrincipal principal = oauth2UserService.buildPrincipal(oidcUser,
                 userRequest.getClientRegistration().getRegistrationId(), userRequest.getAccessToken());
 
         principal.setClaims(oidcUser.getClaims());

@@ -5,8 +5,6 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Base API binding class to deal with the essential task of ensuring that the access token
- *
- * @author Chuc Ba Hieu
  */
 public abstract class ApiBinding {
 

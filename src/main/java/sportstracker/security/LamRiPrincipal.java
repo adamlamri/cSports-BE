@@ -18,9 +18,8 @@ import java.util.stream.Collectors;
 /**
  * Spring Security Principal, implementing both OidcUser, UserDetails
  *
- * @author Chuc Ba Hieu
  */
-public class SpectrePrincipal implements OidcUser, UserDetails, CredentialsContainer {
+public class LamRiPrincipal implements OidcUser, UserDetails, CredentialsContainer {
 
     private AccountDto userDto;
 
@@ -30,7 +29,7 @@ public class SpectrePrincipal implements OidcUser, UserDetails, CredentialsConta
     private OidcUserInfo userInfo;
     private OidcIdToken idToken;
 
-    public SpectrePrincipal(AccountDto userDto) {
+    public LamRiPrincipal(AccountDto userDto) {
 
         this.userDto = userDto;
     }

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * Authentication success handler for redirecting the
  * OAuth2 signed in user to a URL with a short lived auth token
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {

@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * Cors config
  *
- * @author Chuc Ba Hieu
+
  */
 @Slf4j
 @Configuration
