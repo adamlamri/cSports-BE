@@ -27,7 +27,6 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 /**
  * Define a central point for treating exceptions
  *
- * @author Hieu Ba Chuc
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
